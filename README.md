@@ -13,4 +13,4 @@ Praticar conceitos fundamentais de programação e colaboração em equipe.
 
 ---
 
-Feito por Maria Viana — com apoio da Koru e Grupo Boticário.
+Projeto realizado com apoio da Koru e Grupo Boticário.
