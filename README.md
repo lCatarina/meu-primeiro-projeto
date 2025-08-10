@@ -24,12 +24,12 @@ Criar uma aplicação web funcional e responsiva onde o usuário:
 
 | Pessoa | Função | Responsabilidades |
 |--------|--------|-------------------|
-| 1 | HTML Master | Estrutura da página (`index.html`) |
-| 2 | CSS Designer | Layout geral e responsividade (`style.css`) |
+| Sarah| HTML Master | Estrutura da página (`index.html`) |
+| Raul R. | CSS Designer | Layout geral e responsividade (`style.css`) |
 | 3 | CSS UI/UX | Estilos de feedback visual (`style.css`) |
 | 4 | JS DOM Handler | Manipulação de elementos e eventos (`script.js`) |
 | Rafael | JS API Integrador | Requisição à API da OpenAI (`script.js`) |
-| Rafael | Git Manager | Organização do repositório e branches |
+| Maria | Git Manager | Organização do repositório e branches |
 
 ---
 
