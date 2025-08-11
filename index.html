@@ -1,25 +1,52 @@
-<option value="gemini-flash">Gemini Flash</option>
-</select>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<div class="input-group">
-  <label for="question">Sua pergunta:</label>
-  <textarea id="question" placeholder="Digite sua pergunta..." rows="4"></textarea>
-</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="chat_icon.ico" type="image/x-icon">
+  <title>Assistente IA</title>
+</head>
 
-<button id="submitBtn">Perguntar</button>
-</section>
+<body>
+  <main class="container">
+    <h1>Assistente de IA</h1>
 
-<section class="response-container">
-  <h2>Resposta:</h2>
-  <div id="response" class="response-box">
-  </div>
-  <div id="loading" class="loading-indicator hidden">Carregando...</div>
-  <div id="error" class="error-message hidden"></div>
-</section>
-</main>
+    <section class="form-container">
+      <div class="input-group">
+        <label for="apiKey">Sua API Key:</label>
+        <input type="password" id="apiKey" placeholder="Insira sua API Key" autocomplete="off">
+      </div>
 
-<script src="script.js"></script>
+      <div class="input-group">
+        <label for="modelo">Modelo da IA:</label>
+        <select id="modelo">
+          <option value="">Selecione</option>
+          <option value="openai">GPT-3.5 Turbo</option>
+          <option value="gemini-pro">Gemini Pro</option>
+          <option value="gemini-flash">Gemini Flash</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="question">Sua pergunta:</label>
+        <textarea id="question" placeholder="Digite sua pergunta..." rows="4"></textarea>
+      </div>
+
+      <button id="submitBtn">Perguntar</button>
+    </section>
+
+    <section class="response-container">
+      <h2>Resposta:</h2>
+      <div id="response" class="response-box">
+      </div>
+      <div id="loading" class="loading-indicator hidden">Carregando...</div>
+      <div id="error" class="error-message hidden"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
