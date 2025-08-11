@@ -1,40 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<option value="gemini-flash">Gemini Flash</option>
+</select>
+</div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="chat_icon.ico" type="image/x-icon">
-  <title>Assistente IA</title>
-</head>
+<div class="input-group">
+  <label for="question">Sua pergunta:</label>
+  <textarea id="question" placeholder="Digite sua pergunta..." rows="4"></textarea>
+</div>
 
-<body>
-  <header>
-    <h1>Assistente de IA</h1>
+<button id="submitBtn">Perguntar</button>
+</section>
 
-    <input type="password" id="apiKey" placeholder="API Key" />
-    
-    <select id="modelo">
-      <option value="">Selecione</option>
-      <option value="gpt-3.5-turbo">GPT-3.5</option>
-      <option value="gpt-4">GPT-4</option>
-    </select>
-  </header>
+<section class="response-container">
+  <h2>Resposta:</h2>
+  <div id="response" class="response-box">
+  </div>
+  <div id="loading" class="loading-indicator hidden">Carregando...</div>
+  <div id="error" class="error-message hidden"></div>
+</section>
+</main>
 
-  <main>
-    <textarea id="pergunta" placeholder="Digite sua
-pergunta..."></textarea>
-
-    <button id="btnPerguntar">Perguntar</button>
-    
-    <section id="respostaSection" class="hidden">
-      <h2>Resposta:</h2>
-      <p id="resposta"></p>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
